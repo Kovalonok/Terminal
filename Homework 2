@@ -1,0 +1,90 @@
+1. Сделать папку dir_1 - mkdir dir_1
+2. Зайти в папку dir_1 - cd dir_1
+3. Создать папку inner_dir_1 - mkdir  inner_dir_1
+4. Посмотреть где ты находишься - pwd
+5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt - touch tf_1.txt
+6. Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками: - the first 1     - cat > tf_2.txt , выход из cat: Ctrl+C
+                                                                                                    - the second 2      the first 1
+                                                                                                    - the third 3       the second 2
+                                                                                                                        the third 3   
+                                                                                                    
+7. Зайти в папку inner_dir_1 - cd inner_dir_1
+8. Через cat сделать текстовый файл tf_3.txt  c любыми строками - cat > tf_3.txt ,            выход из cat: Ctrl+C
+                                                                  Many hands make light work
+                                                                  Strike while the iron is hot
+                                                                  Don’t judge a book by its cover
+                                                                  Better late than never
+
+9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2” - cat >> tf_3.txt , выход из cat: Ctrl+C
+                                                                        the second 2
+
+10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2” - cat >> tf_3.txt , выход из cat: Ctrl+C
+                                                                      the sec 2
+
+11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3” - cat >> .. / tf_2.txt , выход из cat: Ctrl+C
+                                                                      the sec 3
+
+12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2” , cat >> tf_3.txt , выход из cat: Ctrl+C
+                                                                         the SeCoNd 2
+
+13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2” - cat >> .. / tf_2.txt , выход из cat: Ctrl+C
+                                                                         the seConD 2
+
+14. Сделать текстовый файл tf_4.txt в котором будет 15 строк - cat >> tf_4.txt , выход из cat: Ctrl+C
+                                                               A rolling stone gathers no moss
+                                                               The squeaky wheel gets the grease
+                                                               Always put your best foot forward
+                                                               Where there’s a will, there’s a way
+                                                               Don’t make a mountain out of an anthill
+                                                               The early bird catches the worm
+                                                               It’s better to be safe than sorry
+                                                               Don’t bite off more than you can chew
+                                                               First things first
+                                                               Learn to walk before you run
+                                                               It’s the tip of the iceberg
+                                                               The forbidden fruit is always the sweetest
+                                                               You can’t make an omelet without breaking a few eggs
+                                                               Easy come, easy go
+                                                               Out of sight, out of mind
+
+15. Сделать текстовый файл tF_5.txt в котором будет 13 строк - cat >> tF_5.txt , выход из cat: Ctrl+C
+                                                               Brian is a freelance food critic.
+                                                               He goes to different restaurants, checks new recipes, tries alcoholic drinks and then writes reviews for magazines and websites.
+                                                               He usually gets up at 7am and does a workout. At 8 am, he takes a shower and has breakfast. After that, he works on his reviews.
+                                                               Brian breaks for lunch at about 11am. He usually has lunch at his favourite pizzeria “Mario’s”.
+                                                               After lunch, Brian continues work. 
+                                                               He’s got a reservation at an expensive French restaurant in the evening, so he looks for the information about it on the Internet. 
+                                                               He also studies a new cookbook and chooses some nice recipes for his vlog.
+                                                               At 5pm, he gets dressed for the evening. 
+                                                               He goes to the restaurant with his friend Alex. 
+                                                               At the restaurant, they enjoy a wonderful meal and have a good time.
+                                                               When the waiters can’t see, Brian writes down the details about the service and the atmosphere.
+                                                               He likes everything and wants to write a positive review. 
+                                                               When the dinner is over, he pays the bill and returns home. He doesn’t go by subway, he takes a taxi. 
+
+16. Вывести список всех файлов в папке - ls -la
+17. Выйти из папки inner_dir_1 - cd ..
+18. Вывести содержимое файла tf_3.txt в терминал - cat inner_dir_1/ tf_3.txt
+19. Найти путь к файлу tf_4.txt - find . -name ‘tf_4.txt’
+20. Очистить файл tf_4.txt от содержимого без удаления самого файла - > inner_dir_1/ tf_4.txt
+21. Найти путь к файлам у которых есть  “tf” в названии - find . -type f -name ‘*tf*’
+22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре find . - type f -i - name ‘*tf*’
+23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке - grep sec *
+24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке - grep  -i sec *
+25. Найти строки в файлах где есть только комбинация букв “sec” в текущей папке - grep  -w sec *
+26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке - grep  -w -i sec *
+27. Найти строки в файлах где есть комбинация букв “second” в текущей папке - grep second *
+28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке - grep  -i second * 
+29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем - grep -r second */ .
+30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке - grep  -l second *
+31. Найти все строки во всех файлах где нет комбинации “second” - grep -r -v second .
+32. Найти только название и путь к файлам где нет комбинации “second” - grep -r -l -v  second .
+33. Вывести в терминал 4 последних строк любого текстового файла - tail -4 inner_dir_1/tf_3.txt
+34. Вывести в терминал 4 первые строки любого текстового файла - head -4 inner_dir_1/tf_3.txt
+35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым - cat > file1.txt | mkdir dir_2
+                                                                                  Every man has his price
+36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec” - grep -rl sec . | xargs mv -t dir_2
+37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec” - grep -rl sec . | xargs cp -t  inner_dir_1
+38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл - grep -r -i sec >> file2.txt
+39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec” - grep -r -l sec . | xargs rm
+40. Просто вывести в терминал строку “Good job!!” - echo '“Good job!!”'
