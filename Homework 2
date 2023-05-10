@@ -30,7 +30,7 @@
 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2” - cat >> ../tf_2.txt , выход из cat: Ctrl+C
                                                                          the seConD 2
 
-14. Сделать текстовый файл tf_4.txt в котором будет 15 строк - cat >> tf_4.txt , выход из cat: Ctrl+C
+14. Сделать текстовый файл tf_4.txt в котором будет 15 строк - cat > tf_4.txt , выход из cat: Ctrl+C
                                                                A rolling stone gathers no moss
                                                                The squeaky wheel gets the grease
                                                                Always put your best foot forward
